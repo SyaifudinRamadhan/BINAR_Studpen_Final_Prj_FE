@@ -9,7 +9,7 @@ function Jadwal() {
       >
         <div>
           <div className='d-flex justify-content-center align-items-center h-100'>
-            <div className='text-white'>
+            <div className='position-relative'>
               <h2>Jadwal Penerbangan</h2>
             </div>
           </div>

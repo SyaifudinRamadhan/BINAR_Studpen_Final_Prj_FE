@@ -7,6 +7,8 @@ import Register from './pages/Register'
 import Login from './pages/Login'
 import Checkin from './pages/Checkin'
 import HasilCheckin from './pages/HasilCheckin'
+import Jadwal from './pages/Jadwal'
+import Notifikasi from './pages/Notifikasi/Notif'
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
         <Route path='/register' element={<Register />} />
         <Route path='/checkin' element={<Checkin />} />
         <Route path='/hasilcheckin' element={<HasilCheckin />} />
+        <Route path='/index' element={<Jadwal />} />
+        <Route path='/notif' element={<Notifikasi />} />
       </Routes>
       <Footer />
     </BrowserRouter>

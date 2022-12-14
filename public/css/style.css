@@ -1,9 +1,10 @@
 /* heaeder */
 .header {
-  height: 28px;
-  left: 0px;
-  top: 0px;
+  min-height: 5vh;
+  /* left: 0px;
+  top: 0px; */
   background: #00426f;
+  max-width: 100%;
 }
 
 /* start navbar */
@@ -14,7 +15,7 @@ body {
 .navbar {
   background: #f4eeee;
   align-items: center;
-  margin: auto;
+  /* margin: auto; */
 }
 
 .logoweb1 {
@@ -26,11 +27,6 @@ body {
 }
 
 .navbar ul li a {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 700;
-  /* font-size: 20px; */
-  line-height: 30px;
   color: #656565;
 }
 
@@ -52,29 +48,59 @@ body {
   color: white;
 }
 
+@media screen and (max-width: 992px) {
+  .navbar .btn-secondary {
+    margin-left: 0px;
+  }
+}
+
 /* end nav */
 
+/* bagian lihat penerbangan */
 .btn-kiri {
   width: 250px;
-  height: 75px;
+  height: 50px;
   margin-right: 10px;
   background: #ff6a6a;
   border-radius: 10px;
   font-weight: 600;
   font-size: 20px;
+  line-height: 50px;
   border: none;
 }
 
 .btn-kanan {
   width: 250px;
-  height: 75px;
+  height: 50px;
   margin-left: 10px;
   background: #00b912;
   border-radius: 10px;
   font-weight: 600;
   font-size: 20px;
+  line-height: 50px;
   border: none;
 }
+
+@media screen and (max-width: 768px) {
+  .translate-middle {
+    line-height: 50px;
+  }
+}
+/*
+@media screen and (max-width: 425px) {
+  .btn-kiri {
+    font-size: 12px;
+    width: 170px;
+    height: 40px;
+  }
+
+  .btn-kanan {
+    font-size: 12px;
+    width: 170px;
+    height: 40px;
+  }
+} */
+/* end lihat penerbangan */
 
 .btn-transparent {
   border: 2px solid #ffffff;
@@ -85,16 +111,23 @@ body {
   line-height: 36px;
 }
 
+/* kartu */
 .kartu {
-  padding-top: 100px;
-  padding-left: 90px;
-  padding-right: 100px;
+  width: 80%;
   font-size: 20px;
 }
 
 .kartu p {
   margin-top: 17px;
 }
+
+@media screen and (max-width: 576px) {
+  .kartu {
+    font-size: 15px;
+    width: 100%;
+  }
+}
+/* end kartu */
 
 .partner {
   color: #00426f;
@@ -106,13 +139,36 @@ body {
   background: #ffffff;
 }
 
-.jarak {
-  margin-top: 0px;
+/* more */
+.more {
+  width: 100%;
 }
+.more .logo {
+  width: 100%;
+}
+
+.more .translate-middle {
+  width: 100%;
+}
+.more img {
+  width: 100%;
+}
+/*
+@media screen and (max-width: 992px) {
+  .more .logo {
+    max-width: 100%;
+  }
+} */
+
+/* end more */
 
 .pesawat {
   width: 239.71px;
   height: 66.32px;
+}
+
+.partner-maskapai {
+  align-items: center;
 }
 
 .tentang-kami h2 {
@@ -126,6 +182,14 @@ body {
   text-shadow: #0075cf;
   /* margin-bottom: 10px; */
   /* padding-bottom: 10px; */
+}
+
+.tentang-kami .card {
+  align-items: center;
+}
+
+.tentang-kami img {
+  max-width: 100%;
 }
 
 .card-img {
@@ -312,6 +376,10 @@ select {
 /* footer */
 .foot {
   margin-top: 300px;
+  /* display: flex; */
+  flex-wrap: wrap;
+  max-width: 100%;
+  flex-direction: row;
 }
 
 .foot h5,
@@ -319,5 +387,6 @@ h2 {
   color: #0075cf;
 }
 
-/* Hasil Check in */
-/* #receipt { */
+.foot .group-10 {
+  width: 325px;
+}
